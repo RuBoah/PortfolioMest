@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Madimi+One&family=Satisfy&family=Special+Elite&display=swap" rel="stylesheet">
+    <title>Ruth's Portfolio</title>
+</head>
+<body class="bg-white text-black">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full flex justify-between items-center px-10 py-4 bg-white-500 shadow-md z-50">
+        <a href="#section2" class="text-xl font-bold" style="font-family: 'Madimi One', serif;">Ruth Boahene</a>
+        <div class="flex space-x-8 text-sm" style="font-family: 'Madimi One', serif;">
+            <a href="#section1" class="hover:text-orange-500">HOME</a>
+            <a href="#section2" class="hover:text-orange-500">ABOUT ME</a>
+            <a href="#section3" class="hover:text-orange-500">PORTFOLIO</a>
+            <a href="#section4" class="hover:text-orange-500">SKILLS</a>
+            <a href="#section5" class="hover:text-orange-500">CONTACT</a>
+        </div>
+    </nav>
+    
+    <!-- Spacer for Fixed Navbar -->
+    <div class="h-16"></div>
+    
+    <!-- Main Section -->
+    <section class="flex flex-col-reverse md:flex-row items-center justify-between px-10 py-20 gap-4 md:gap-8" id="section1">
+    <div class="max-w-lg md:ps-10">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">From Admin & Teaching to Web Development</h1>
+        <p class="text-lg mb-6">I build user-friendly websites for everyone; nonprofits, educators, and mission-driven organizations.</p>
+        <a href="#section3"><button class="px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600">View My Work</button></a>
+    </div>
+    <div>
+        <img src="/images/mainpic.png" alt="Profile Picture" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg transition-transform duration-300 hover:animate-ping">
+    </div>
+   
+</section>
+
+
+    <!-- About Me Section -->
+    <section class="flex flex-col md:flex-row items-center justify-between bg-white px-6 md:px-16 lg:px-32 py-10 md:py-20 bg-white text-black" id="section2">
+
+        <div class="flex-1 flex justify-center md:justify-end pt-6 md:pt-0">
+            <img src="/images/mainpic.png" alt="Profile Picture" class="h-64 md:h-80 lg:h-96 w-auto rounded-lg shadow-md">
+        </div>
+        <div class="flex-1 text-justify md:pr-10">
+            <p class="text-lg font-semibold text-gray-700">ABOUT ME</p>
+            <h1 class="text-2xl md:text-4xl font-bold mb-4">PERSONAL DETAILS</h1>
+            <p class="text-base md:text-lg mb-4 font-light">I have experience in administrative support for social-impact work and teaching, where organization, communication, and problem-solving were key aspects of my role. My transition into web development stemmed from a desire to combine these skills with technology to create meaningful digital solutions.</p>
+            <p class="text-base md:text-lg mb-6 font-light">I am passionate about building functional and user-friendly websites, especially for nonprofits, educators, and mission-driven organizations. My focus is on developing websites that are not only visually appealing but also accessible and effective in supporting each organization's goals.</p>
+            <a href="https://www.linkedin.com/in/ruthboahene"><button class="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-teal-600">Read More</button></a>
+        </div>
+        
+    </section>
+
+     <!-- Projects Section -->
+    <section class="bg-gray-100 px-6 md:px-16 lg:px-32 py-10 md:py-20" id="section3">
+        <div class="text-center mb-10">
+            <h1 class="text-2xl md:text-4xl font-bold">My Projects</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="text-center">
+                <a href="#"><img src="/images/hotel.jpg" alt="Hotel Project" class="w-full h-56 object-cover rounded-lg shadow-md transform transition duration-300 hover:scale-105"></a>
+                <p class="mt-2 text-lg font-semibold">Hotel Project</p>
+            </div>
+            <div class="text-center">
+                <a href="#"><img src="/images/edu.jpg" alt="Education Project" class="w-full h-56 object-cover rounded-lg shadow-md transform transition duration-300 hover:scale-105"></a>
+                <p class="mt-2 text-lg font-semibold">Project on Education</p>
+            </div>
+            <div class="text-center">
+                <a href="#"><img src="/images/perfume.jpg" alt="Perfume Project" class="w-full h-56 object-cover rounded-lg shadow-md transform transition duration-300 hover:scale-105"></a>
+                <p class="mt-2 text-lg font-semibold">Ecommerce Perfume Project</p>
+            </div>
+            <div class="text-center">
+                <a href="#"><img src="/images/travel.jpg" alt="Travel Project" class="w-full h-56 object-cover rounded-lg shadow-md transform transition duration-300 hover:scale-105"></a>
+                <p class="mt-2 text-lg font-semibold">Project on Experiencing Cultures</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Showcase Section -->
+    <section class="bg-gray-400 text-white py-10 md:py-20" id="section4">
+        <div class="text-center">
+            <h1 class="text-2xl md:text-4xl font-bold">My Skills</h1>
+        </div>
+    
+        <div class="max-w-4xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
+            <!-- Technical Skills -->
+            <div class="bg-orange-700 p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-semibold mb-4 border-b pb-2">Technical Skills</h2>
+                <ul class="space-y-2">
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>Tailwind CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>GitLab</li>
+                </ul>
+            </div>
+    
+            <!-- Soft Skills -->
+            <div class="bg-orange-700 p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-semibold mb-4 border-b pb-2">Soft Skills</h2>
+                <ul class="space-y-2">
+                    <li>Organization</li>
+                    <li>Project Management</li>
+                    <li>Attention to Detail</li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+    <section class="bg-black text-white py-10 md:py-20 text-center" id="section5">
+        <h1 class="text-2xl md:text-4xl font-bold">Ruth Boahene</h1>
+        <p class="text-gray-400 my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="flex justify-center space-x-4 mb-6">
+            <a href="mailto:rugyep@gmail.com" class="text-gray-400 text-2xl hover:text-gray-300"><i class="fa fa-envelope"></i></a>
+           
+            <a href="#" class="text-gray-400 text-2xl hover:text-gray-300"><i class="fa fa-github"></i></a>
+            <a href="#" class="text-gray-400 text-2xl hover:text-gray-300"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ruthboahene" target="_blank" class="text-gray-400 text-2xl hover:text-gray-300"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="space-x-4">
+            <button class="px-6 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600">Download CV</button>
+            <button class="px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600">Let's Talk</button>
+        </div>
+    </section>
+
+</body>
+</html>
