@@ -6,74 +6,125 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Madimi+One&family=Satisfy&family=Special+Elite&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/favicon.jpeg">
+    <link rel="icon" type="image/png" href="images/heropic.png">
     <title>Ruth's Portfolio</title>
 </head>
 <body class="bg-white text-black">
    
-   <nav class="fixed top-0 left-0 w-full flex justify-between items-center px-10 py-4 bg-white shadow-md z-50">
-        <a href="#section2" class="text-xl font-bold" style="font-family: 'Madimi One', serif;">Ruth Boahene</a>
-        <div class="flex space-x-8 text-sm" style="font-family: 'Madimi One', serif;">
-            <a href="#section1" class="hover:text-orange-500">HOME</a>
-            <a href="#section2" class="hover:text-orange-500">ABOUT ME</a>
-            <a href="#section3" class="hover:text-orange-500">PORTFOLIO</a>
-            <a href="#section4" class="hover:text-orange-500">SKILLS</a>
-            <a href="#section5" class="hover:text-orange-500">CONTACT</a>
-        </div>
-    </nav>
+  <nav class="fixed top-0 left-0 w-full flex justify-between items-center px-6 md:px-10 py-4 bg-white shadow-md z-50">
+  <!-- Logo -->
+  <a href="#section2" class="text-xl font-bold" style="font-family: 'Madimi One', serif;">Ruth Boahene</a>
+
+  <!-- Hamburger Button (mobile only) -->
+  <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none">
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+        d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+
+ 
+  <div id="menu" class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-sm mt-2 md:mt-0" style="font-family: 'Madimi One', serif;">
+    <a href="#section1" class="block px-4 py-2 hover:text-green-500">Home</a>
+    <a href="#section2" class="block px-4 py-2 hover:text-green-500">About Me</a>
+    <a href="#section3" class="block px-4 py-2 hover:text-green-500">Portfolio</a>
+    <a href="#section4" class="block px-4 py-2 hover:text-green-500">Skills</a>
+    <a href="#section5" class="block px-4 py-2 hover:text-green-500">Education</a>
+    <a href="#section6" class="block px-4 py-2 hover:text-green-500">Contact</a>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
     
     
     <div class="h-20"></div>
     
-<section class="flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-10 py-20 gap-8 md:gap-12" id="section1">
-    <div class="max-w-lg">
-        <h1 class="text-3xl md:text-5xl font-bold mb-4">From Admin & Teaching to Web Development</h1>
-        <p class="text-lg mb-6">I build user-friendly websites for everyone; nonprofits, educators, and mission-driven organizations.</p>
-        <a href="#section3">
-            <button class="px-6 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors">View My Work</button>
-        </a>
-    </div>
-    <div class="flex justify-center">
-        <img src="/images/mainpic.png" alt="Profile Picture" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-    </div>
+<section class="flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-12 py-20 gap-10 md:gap-16 bg-gradient-to-r from-emerald-50 via-white to-emerald-50" id="section1">
+ 
+  <div class="max-w-xl text-center md:text-left">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-5">
+      From Ideas to Impact — Turning Vision into Action
+    </h1>
+    <p class="text-lg text-gray-600 mb-8">
+      I collaborate with mission-driven teams to design seamless experiences, manage projects, 
+      and build meaningful digital solutions that inspire change.
+    </p>
+    <a href="#section3">
+      <button class="px-8 py-3 bg-emerald-600 text-white text-lg font-medium rounded-full shadow-md hover:bg-emerald-700 transition-transform transform hover:scale-105">
+        Explore My Work
+      </button>
+    </a>
+  </div>
+
+ 
+  <div class="flex justify-center">
+    <img 
+      src="/images/heropic.png" 
+      alt="Ruth Boahene Profile" 
+      class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+    >
+  </div>
 </section>
+
 
 
     
-  <section class="bg-white py-16 md:py-24 px-6 md:px-12 lg:px-24" id="section2">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-       
-        <div class="w-full md:w-5/12 flex justify-center">
-            <div class="relative group">
-                <img src="/images/mainpic.png" alt="Profile Picture" 
-                     class="h-64 md:h-80 lg:h-96 w-auto rounded-xl shadow-lg transform transition duration-300 group-hover:scale-102">
-                <div class="absolute inset-0 border-2 border-emerald-400 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-            </div>
-        </div>
-        
-      
-        <div class="w-full md:w-7/12">
-            
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Personal Details</h2>
-            
-            <div class="space-y-5 text-gray-700">
-                <p class="bg-gray-50 p-4 rounded-lg border-l-4 border-emerald-500 font-medium">I have experience in administrative support for social-impact work and teaching, where organization, communication, and problem-solving were key aspects of my role. My transition into web development stemmed from a desire to combine these skills with technology to create meaningful digital solutions.</p>
-                
-                <p class="bg-gray-50 p-4 rounded-lg border-l-4 border-emerald-500 font-medium">I am passionate about building functional and user-friendly websites, especially for nonprofits, educators, and mission-driven organizations. My focus is on developing websites that are not only visually appealing but also accessible and effective in supporting each organization's goals.</p>   
-             
-            </div>
-            
-            <div class="mt-8 flex flex-wrap gap-4">
-                <a href="https://www.linkedin.com/in/ruthboahene" class="px-6 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition-colors flex items-center gap-2">
-                    <i class="fa fa-linkedin"></i> View LinkedIn
-                </a>
-                <a href="#section5" class="px-6 py-2 border border-emerald-600 text-emerald-600 rounded-md hover:bg-emerald-50 transition-colors">
-                    Contact Me
-                </a>
-            </div>
-        </div>
+  <section class="bg-gradient-to-b from-white to-emerald-50 py-20 md:py-28 px-6 md:px-12 lg:px-24" id="section2">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
+    
+    <div class="w-full md:w-5/12 flex justify-center">
+      <div class="relative group">
+        <img 
+          src="/images/heropic2.png" 
+          alt="Ruth Boahene" 
+          class="h-64 md:h-80 lg:h-96 w-auto rounded-2xl shadow-xl transition-transform duration-500 group-hover:scale-105"
+        >
+        <div class="absolute inset-0 border-2 border-emerald-400 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      </div>
     </div>
+
+    
+    <div class="w-full md:w-7/12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 relative">
+        Personal Details
+        <span class="block w-16 h-1 bg-emerald-500 mt-2 rounded-full"></span>
+      </h2>
+
+      <div class="space-y-6 text-gray-700 leading-relaxed">
+       <p class="bg-white shadow-sm p-5 rounded-lg border-l-4 border-emerald-500 font-medium">
+  My journey has always been about connecting people, ideas, and impact. I started by supporting teams and communities through administrative and outreach work, where I learned the importance of structure, empathy, and effective communication. Those experiences shaped my approach to problem-solving and project execution — with a balance of strategy and heart.
+</p>
+
+<p class="bg-white shadow-sm p-5 rounded-lg border-l-4 border-emerald-500 font-medium">
+  Over time, I grew curious about how technology could make this work even more efficient and meaningful. That curiosity led me into the world of digital tools and web development — where I now use creativity, organization, and technical skills to bring ideas to life. Whether it’s coordinating a project, managing operations, or building a user-friendly website, I’m driven by one goal: helping people and organizations turn vision into tangible results.
+</p>
+
+      </div>
+
+     
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="https://www.linkedin.com/in/ruthboahene" 
+           class="px-6 py-3 bg-emerald-600 text-white rounded-full shadow-md hover:bg-emerald-700 transition-transform transform hover:scale-105 flex items-center gap-2">
+          <i class="fa fa-linkedin text-lg"></i> LinkedIn Profile
+        </a>
+
+        <a href="#section5" 
+           class="px-6 py-3 border border-emerald-600 text-emerald-700 rounded-full hover:bg-emerald-100 transition-colors font-medium">
+          Contact Me
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 
 <section class="bg-gray-100 px-6 md:px-16 lg:px-32 py-10 md:py-20" id="section3">
@@ -118,61 +169,172 @@
 
 
   
-<section class="bg-gray-300 text-gray-900 py-10 md:py-20" id="section4">
-    <div class="text-center">
-        <h1 class="text-2xl md:text-4xl font-bold text-emerald-900">My Skills</h1>
+<section class="bg-gradient-to-b from-emerald-50 to-white text-gray-900 py-20" id="section4">
+  <div class="text-center mb-12">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-emerald-800 mb-3">My Skills & Tools</h1>
+    <p class="text-gray-600 max-w-xl mx-auto text-base md:text-lg">
+      A mix of technology, organization, and creativity — helping me turn ideas into efficient, user-focused results.
+    </p>
+    <span class="block w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></span>
+  </div>
+
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
+
+  
+    <div class="bg-white border border-emerald-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+      <h2 class="text-xl font-semibold text-emerald-700 mb-5 flex items-center gap-2">
+        <i class="fa fa-laptop-code text-emerald-500"></i> Technical Skills
+      </h2>
+      <ul class="space-y-2 text-gray-700 font-medium">
+        <li>HTML5, CSS / Tailwind CSS</li>
+        <li>JavaScript & React.js</li>
+        <li>GitHub & Version Control</li>
+        <li>MS Office Suite & Canva</li>
+        <li>Infogram (Data Visualization)</li>
+        <li>Scrum / Agile Practices</li>
+      </ul>
     </div>
 
-    <div class="max-w-4xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
-       
-        <div class="bg-emerald-700 text-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-xl font-semibold mb-4 border-b border-emerald-300 pb-2">Technical Skills</h2>
-           <ul class="space-y-2">
-    <li>HTML5</li>
-    <li>CSS & Tailwind CSS</li>
-    <li>JavaScript</li>
-    <li>React.js</li>
-    <li>GitHub</li>
-    <li>MS Suite (Excel, Outlook, PowerPoint)</li>
-    <li>Canva</li>
-    <li>Infogram(Data Analysis)</li>
-    <li>Machine Learning Fundamentals</li>
-</ul>
-        </div>
-   
-        <div class="bg-emerald-700 text-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-xl font-semibold mb-4 border-b border-emerald-300 pb-2">Soft Skills</h2>
-            <ul class="space-y-2">
-                <li>An Eye for Detail</li>
-                <li>Organization</li>
-                <li>Project Management</li>
-                <li>Creativity</li>
-                <li>Time Management</li>
-                <li>Interpersonal Skills</li>
-                <li>Team Work</li>
-            </ul>
-        </div>
+    
+    <div class="bg-white border border-emerald-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+      <h2 class="text-xl font-semibold text-emerald-700 mb-5 flex items-center gap-2">
+        <i class="fa fa-user-check text-emerald-500"></i> Soft Skills
+      </h2>
+      <ul class="space-y-2 text-gray-700 font-medium">
+        <li>Project Management & Coordination</li>
+        <li>Attention to Detail & Organization</li>
+        <li>Creativity & Problem Solving</li>
+        <li>Communication & Team Collaboration</li>
+        <li>Time Management & Adaptability</li>
+      </ul>
     </div>
+  </div>
 </section>
+<section id="section5" class="bg-white py-16 md:py-24 px-6 md:px-12 lg:px-24">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-emerald-800">Education & Certifications</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto mt-3">
+        Training and certifications that combine technology, organization, and leadership to deliver meaningful results.
+      </p>
+    </div>
+
+  
+    <div class="space-y-6">
+
+     
+      <div class="flex flex-col md:flex-row items-start md:items-center bg-emerald-50 border border-emerald-100 p-6 rounded-2xl shadow-sm">
+        <div class="w-full md:w-3/12 text-emerald-700 font-semibold">
+          <div class="text-sm">2013</div>
+          <div class="text-lg md:text-xl mt-1">KNUST</div>
+        </div>
+        <div class="w-full md:w-9/12 mt-3 md:mt-0">
+          <h3 class="text-lg font-semibold text-gray-800">Bachelor of Arts — Economics</h3>
+          <p class="text-gray-600 mt-1">Kwame Nkrumah University of Science and Technology, Ghana</p>
+        </div>
+      </div>
+
+    
+      <div class="flex flex-col md:flex-row items-start md:items-center bg-white border border-emerald-100 p-6 rounded-2xl shadow-sm">
+        <div class="w-full md:w-3/12 text-emerald-700 font-semibold">
+          <div class="text-sm">Feb — May 2025</div>
+          <div class="text-lg md:text-xl mt-1">MEST Grow</div>
+        </div>
+        <div class="w-full md:w-9/12 mt-3 md:mt-0">
+          <h3 class="text-lg font-semibold text-gray-800">Certified Web Developer</h3>
+          <p class="text-gray-600 mt-1">Focused on front-end fundamentals, responsive design, and project delivery.</p>
+        </div>
+      </div>
+
+    
+      <div class="flex flex-col md:flex-row items-start md:items-center bg-emerald-50 border border-emerald-100 p-6 rounded-2xl shadow-sm">
+        <div class="w-full md:w-3/12 text-emerald-700 font-semibold">
+          <div class="text-sm">Apr — Jul 2025</div>
+          <div class="text-lg md:text-xl mt-1">ALX</div>
+        </div>
+        <div class="w-full md:w-9/12 mt-3 md:mt-0">
+          <h3 class="text-lg font-semibold text-gray-800">Certified Virtual Assistant</h3>
+          <p class="text-gray-600 mt-1">Training in operations, communication, and remote collaboration.</p>
+        </div>
+      </div>
+
+
+      <div class="flex flex-col md:flex-row items-start md:items-center bg-white border border-emerald-100 p-6 rounded-2xl shadow-sm">
+        <div class="w-full md:w-3/12 text-emerald-700 font-semibold">
+          <div class="text-sm">Sep 2025</div>
+          <div class="text-lg md:text-xl mt-1">Women in Agile</div>
+        </div>
+        <div class="w-full md:w-9/12 mt-3 md:mt-0">
+          <h3 class="text-lg font-semibold text-gray-800">Professional Development Program</h3>
+          <p class="text-gray-600 mt-1">Hands-on exposure to Agile values, Scrum practices, and collaborative problem-solving.</p>
+        </div>
+      </div>
+
+     
+      <div class="flex flex-col md:flex-row items-start md:items-center bg-emerald-50 border border-emerald-100 p-6 rounded-2xl shadow-sm">
+        <div class="w-full md:w-3/12 text-emerald-700 font-semibold">
+          <div class="text-sm">2025</div>
+          <div class="text-lg md:text-xl mt-1">Scrum.org</div>
+        </div>
+        <div class="w-full md:w-9/12 mt-3 md:mt-0">
+          <h3 class="text-lg font-semibold text-gray-800">Professional Scrum Master I (PSM I)</h3>
+          <p class="text-gray-600 mt-1">Demonstrated mastery of Scrum principles, servant leadership, and Agile delivery frameworks.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
     
 
 
-    <footer class="bg-black text-white py-10 md:py-20 text-center" id="section5">
-        <h1 class="text-2xl md:text-4xl font-bold">Ruth Boahene</h1>
-        <p class="text-gray-400 my-4"></i>rugyep@gmail.com | 0547600263</p>
-        <div class="flex justify-center space-x-4 mb-6">
-            <a href="mailto:rugyep@gmail.com" class="text-gray-400 text-2xl hover:text-gray-300"><i class="fa fa-envelope"></i></a>
-           
-            <a href="https://github.com/RuBoah" target="_blank" class="text-gray-400 text-2xl hover:text-gray-300"><i class="fa fa-github"></i></a>
-        
-            <a href="https://www.linkedin.com/in/ruthboahene" target="_blank" class="text-gray-400 text-2xl hover:text-gray-300"><i class="fa fa-linkedin"></i></a>
-        </div>
-        <div class="space-x-4">
-           <a href="https://www.linkedin.com/in/ruthboahene" target="_blank"><button class="px-6 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600">Download CV</button></a>
-           <a href="https://wa.me/0547600263" target="_blank"><button class="px-6 py-2 bg-emerald-500 text-white rounded-md hover:bg-emerald-600">Let's Talk</button></a>
-        </div>
-    </footer>
+  <footer class="bg-black text-white py-12 md:py-20 px-6" id="section6">
+  <div class="max-w-5xl mx-auto text-center">
+    
+   
+    <h1 class="text-3xl md:text-5xl font-bold mb-4 text-emerald-500" style="font-family: 'Madimi One', serif;">
+  Ruth Boahene
+</h1>
+
+    <p class="text-gray-400 mb-6 text-lg">
+      rugyep@gmail.com | +233 54 760 0263
+    </p>
+    
+
+    <div class="flex justify-center space-x-6 mb-8">
+      <a href="mailto:rugyep@gmail.com" class="text-gray-400 text-3xl hover:text-emerald-500 transition-transform transform hover:scale-110">
+        <i class="fa fa-envelope"></i>
+      </a>
+      <a href="https://github.com/RuBoah" target="_blank" class="text-gray-400 text-3xl hover:text-emerald-500 transition-transform transform hover:scale-110">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ruthboahene" target="_blank" class="text-gray-400 text-3xl hover:text-emerald-500 transition-transform transform hover:scale-110">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div>
+    
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="https://docs.google.com/document/d/1w2XRTwXpqOXg3VpqZE4LLFzBuGfDpS7Rpad-bYSzLMY/edit?usp=sharing" target="_blank">
+        <button class="px-8 py-3 bg-gray-800 text-white rounded-full shadow-md hover:bg-gray-700 transition transform hover:scale-105">
+          Download CV
+        </button>
+      </a>
+      <a href="https://wa.me/0547600263" target="_blank">
+        <button class="px-8 py-3 bg-emerald-500 text-white rounded-full shadow-md hover:bg-emerald-600 transition transform hover:scale-105">
+          Let's Talk
+        </button>
+      </a>
+    </div>
+    
+
+    <p class="text-gray-500 mt-8 text-sm">&copy; 2025 Ruth Boahene. All rights reserved.</p>
+    
+  </div>
+</footer>
+
 
 </body>
 </html>
